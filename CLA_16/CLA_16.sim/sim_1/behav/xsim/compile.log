@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CO assignment/CLA_16/CLA_16.srcs/sources_1/new/cla_adder_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cla4
+INFO: [VRFC 10-311] analyzing module cla16
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CO assignment/CLA_16/CLA_16.srcs/sim_1/new/tb_cla_adder_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cla16_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CO assignment/CLA_16/CLA_16.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

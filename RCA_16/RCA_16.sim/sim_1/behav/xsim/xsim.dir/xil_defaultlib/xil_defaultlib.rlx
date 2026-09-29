@@ -1,0 +1,8 @@
+0.7
+2020.2
+Jun 16 2026
+11:10:11
+E:/CO assignment/RCA_16/RCA_16.sim/sim_1/behav/xsim/glbl.v,1773749341,verilog,,,,glbl,,,,,,,,
+E:/CO assignment/RCA_16/RCA_16.srcs/sim_1/new/tb_ripple_carry_adder_16.v,1789188796,verilog,,,,tb_ripple_carry_adder_16,,,C:/AMDDesignTools/2026.1/Vivado/data/rsb/busdef,,,,,
+E:/CO assignment/RCA_16/RCA_16.srcs/sources_1/new/full_adder.v,1789188814,verilog,,E:/CO assignment/RCA_16/RCA_16.srcs/sources_1/new/ripple_carry_adder_16.v,,full_adder,,,C:/AMDDesignTools/2026.1/Vivado/data/rsb/busdef,,,,,
+E:/CO assignment/RCA_16/RCA_16.srcs/sources_1/new/ripple_carry_adder_16.v,1789188817,verilog,,E:/CO assignment/RCA_16/RCA_16.srcs/sim_1/new/tb_ripple_carry_adder_16.v,,ripple_carry_adder_16,,,C:/AMDDesignTools/2026.1/Vivado/data/rsb/busdef,,,,,

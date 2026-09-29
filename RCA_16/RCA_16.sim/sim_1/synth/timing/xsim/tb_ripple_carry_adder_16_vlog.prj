@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "C:/AMDDesignTools/2026.1/Vivado/data/rsb/busdef" \
+"tb_ripple_carry_adder_16_time_synth.v" \
+"../../../../../RCA_16.srcs/sim_1/new/tb_ripple_carry_adder_16.v" \
+
+# Do not sort compile order
+nosort

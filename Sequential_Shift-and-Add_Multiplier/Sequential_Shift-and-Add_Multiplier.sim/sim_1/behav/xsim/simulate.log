@@ -1,0 +1,7 @@
+Time resolution is 1 ps
+PASS: Reset verification
+PASS: 0 * 0 = 0 (cycles = 16)
+PASS: 0 * 65535 = 0 (cycles = 16)
+PASS: 1 * 1 = 1 (cycles = 16)
+PASS: 1 * 65535 = 65535 (cycles = 16)
+PASS: 2 * 32768 = 65536 (cycles = 16)

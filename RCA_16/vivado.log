@@ -1,0 +1,1268 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 11-sep-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Mon Sep 28 12:09:03 2026
+# Process ID         : 39436
+# Current directory  : E:/CO assignment/RCA_16
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent2760 E:\CO assignment\RCA_16\RCA_16.xpr
+# Log file           : E:/CO assignment/RCA_16/vivado.log
+# Journal file       : E:/CO assignment/RCA_16\vivado.jou
+# Running On         : TARUN-PC
+# Platform           : Windows 11
+# Operating System   : 26300
+# Processor Detail   : AMD Ryzen 7 8845HS w/ Radeon 780M Graphics
+# CPU Frequency      : 3793 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 33615 MB
+# Swap memory        : 5100 MB
+# Total Virtual      : 38715 MB
+# Available Virtual  : 14521 MB
+#-----------------------------------------------------------
+start_gui
+open_project {E:/CO assignment/RCA_16/RCA_16.xpr}
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'E:/CO assignment/RCA_16/RCA_16.gen/sources_1'.
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'E:/CO assignment/RCA_16/RCA_16.ip_user_files'.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-509] GeneratedRun file for 'synth_1' not found
+WARNING: [Project 1-5713] Board part '' set for the project  is not found. BoardPart property will be unset. Please select board from latest repo build 
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2026.1/Vivado/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 1813.910 ; gain = 288.566
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 12
+[Mon Sep 28 12:09:40 2026] Launched synth_1...
+Run output will be captured here: E:/CO assignment/RCA_16/RCA_16.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg400-3
+INFO: [Device 21-403] Loading part xc7z020clg400-3
+INFO: [Project 1-5699] Read binary netlist with skipMacroContent - 1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1999.199 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2026.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2117.457 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 2542.371 ; gain = 699.562
+close_design
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7z020clg400-3
+Top: ripple_carry_adder_16
+INFO: [Designutils 20-5008] Incremental synthesis strategy default
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 16476
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 3002.895 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ripple_carry_adder_16' [E:/CO assignment/RCA_16/RCA_16.srcs/sources_1/new/ripple_carry_adder_16.v:23]
+INFO: [Synth 8-6157] synthesizing module 'full_adder' [E:/CO assignment/RCA_16/RCA_16.srcs/sources_1/new/full_adder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'full_adder' (0#1) [E:/CO assignment/RCA_16/RCA_16.srcs/sources_1/new/full_adder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ripple_carry_adder_16' (0#1) [E:/CO assignment/RCA_16/RCA_16.srcs/sources_1/new/ripple_carry_adder_16.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3041.668 ; gain = 38.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3041.668 ; gain = 38.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3041.668 ; gain = 38.773
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3041.668 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3132.898 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 3139.086 ; gain = 136.191
+10 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 3139.086 ; gain = 136.191
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg400-3
+INFO: [Project 1-5699] Read binary netlist with skipMacroContent - 1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3157.059 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2026.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3157.059 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -3, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+launch_simulation -mode post-synthesis -type timing
+Command: launch_simulation  -mode post-synthesis -type timing
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Mon Sep 28 12:25:42 2026
+
+INFO: [Vivado 12-12493] Simulation top is 'tb_ripple_carry_adder_16'
+INFO: [Vivado 12-5682] Launching post-synthesis timing simulation in 'E:/CO assignment/RCA_16/RCA_16.sim/sim_1/synth/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/AMDDesignTools/2026.1/Vivado/tps/boost_1_72_0'
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "E:/CO assignment/RCA_16/RCA_16.sim/sim_1/synth/timing/xsim/tb_ripple_carry_adder_16_time_synth.v"
+INFO: [SIM-utils-27] Writing SDF file...
+INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "E:/CO assignment/RCA_16/RCA_16.sim/sim_1/synth/timing/xsim/tb_ripple_carry_adder_16_time_synth.sdf"
+INFO: [SIM-utils-36] Netlist generated:E:/CO assignment/RCA_16/RCA_16.sim/sim_1/synth/timing/xsim/tb_ripple_carry_adder_16_time_synth.v
+INFO: [SIM-utils-37] SDF generated:E:/CO assignment/RCA_16/RCA_16.sim/sim_1/synth/timing/xsim/tb_ripple_carry_adder_16_time_synth.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_ripple_carry_adder_16' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/CO assignment/RCA_16/RCA_16.sim/sim_1/synth/timing/xsim'
+"xvlog --incr --relax -prj tb_ripple_carry_adder_16_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CO assignment/RCA_16/RCA_16.sim/sim_1/synth/timing/xsim/tb_ripple_carry_adder_16_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ripple_carry_adder_16
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CO assignment/RCA_16/RCA_16.srcs/sim_1/new/tb_ripple_carry_adder_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_ripple_carry_adder_16
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/CO assignment/RCA_16/RCA_16.sim/sim_1/synth/timing/xsim'
+"xelab --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot tb_ripple_carry_adder_16_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.tb_ripple_carry_adder_16 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot tb_ripple_carry_adder_16_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.tb_ripple_carry_adder_16 xil_defaultlib.glbl -log elaborate.log 
+INFO: [XSIM 43-3493] Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "tb_ripple_carry_adder_16_time_synth.sdf", for root module "tb_ripple_carry_adder_16/DUT".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "tb_ripple_carry_adder_16_time_synth.sdf", for root module "tb_ripple_carry_adder_16/DUT".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module xil_defaultlib.ripple_carry_adder_16
+Compiling module xil_defaultlib.tb_ripple_carry_adder_16
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_ripple_carry_adder_16_time_synth
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/CO assignment/RCA_16/RCA_16.sim/sim_1/synth/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_ripple_carry_adder_16_time_synth -key {Post-Synthesis:sim_1:Timing:tb_ripple_carry_adder_16} -tclbatch {tb_ripple_carry_adder_16.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_ripple_carry_adder_16.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 70 ns : File "E:/CO assignment/RCA_16/RCA_16.srcs/sim_1/new/tb_ripple_carry_adder_16.v" Line 64
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_ripple_carry_adder_16_time_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 3617.598 ; gain = 52.672
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+report_timing
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -3, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Mon Sep 28 12:28:43 2026
+| Host         : TARUN-PC running 64-bit major release  (build 9200)
+| Command      : report_timing
+| Design       : ripple_carry_adder_16
+| Device       : 7z020-clg400
+| Speed File   : -3  PRODUCTION 1.12 2019-11-22
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack:                    inf
+  Source:                 Cin
+                            (input port)
+  Destination:            Sum[15]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.276ns  (logic 3.901ns (53.609%)  route 3.375ns (46.391%))
+  Logic Levels:           10  (IBUF=1 LUT5=8 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  Cin
+                         net (fo=0)                   0.000     0.000    Cin
+                         IBUF (Prop_ibuf_I_O)         0.821     0.821 r  Cin_IBUF_inst/O
+                         net (fo=3, unplaced)         0.571     1.392    Cin_IBUF
+                         LUT5 (Prop_lut5_I2_O)        0.113     1.505 r  Sum_OBUF[3]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     1.824    C_2
+                         LUT5 (Prop_lut5_I2_O)        0.102     1.926 r  Sum_OBUF[5]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     2.245    C_4
+                         LUT5 (Prop_lut5_I2_O)        0.102     2.347 r  Sum_OBUF[7]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     2.666    C_6
+                         LUT5 (Prop_lut5_I2_O)        0.102     2.768 r  Sum_OBUF[9]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     3.087    C_8
+                         LUT5 (Prop_lut5_I2_O)        0.097     3.184 r  Sum_OBUF[11]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     3.503    C_10
+                         LUT5 (Prop_lut5_I2_O)        0.102     3.605 r  Sum_OBUF[13]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     3.924    C_12
+                         LUT5 (Prop_lut5_I2_O)        0.102     4.026 r  Sum_OBUF[15]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     4.345    C_14
+                         LUT5 (Prop_lut5_I3_O)        0.102     4.447 r  Sum_OBUF[15]_inst_i_1/O
+                         net (fo=1, unplaced)         0.571     5.018    Sum_OBUF[15]
+                         OBUF (Prop_obuf_I_O)         2.258     7.276 r  Sum_OBUF[15]_inst/O
+                         net (fo=0)                   0.000     7.276    Sum[15]
+                                                                      r  Sum[15]
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+report_timing -nworst 10
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -3, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 1 -nworst 10 -delay_type max -sort_by slack.
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Mon Sep 28 12:29:56 2026
+| Host         : TARUN-PC running 64-bit major release  (build 9200)
+| Command      : report_timing -nworst 10
+| Design       : ripple_carry_adder_16
+| Device       : 7z020-clg400
+| Speed File   : -3  PRODUCTION 1.12 2019-11-22
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack:                    inf
+  Source:                 Cin
+                            (input port)
+  Destination:            Sum[15]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.276ns  (logic 3.901ns (53.609%)  route 3.375ns (46.391%))
+  Logic Levels:           10  (IBUF=1 LUT5=8 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  Cin
+                         net (fo=0)                   0.000     0.000    Cin
+                         IBUF (Prop_ibuf_I_O)         0.821     0.821 r  Cin_IBUF_inst/O
+                         net (fo=3, unplaced)         0.571     1.392    Cin_IBUF
+                         LUT5 (Prop_lut5_I2_O)        0.113     1.505 r  Sum_OBUF[3]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     1.824    C_2
+                         LUT5 (Prop_lut5_I2_O)        0.102     1.926 r  Sum_OBUF[5]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     2.245    C_4
+                         LUT5 (Prop_lut5_I2_O)        0.102     2.347 r  Sum_OBUF[7]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     2.666    C_6
+                         LUT5 (Prop_lut5_I2_O)        0.102     2.768 r  Sum_OBUF[9]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     3.087    C_8
+                         LUT5 (Prop_lut5_I2_O)        0.097     3.184 r  Sum_OBUF[11]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     3.503    C_10
+                         LUT5 (Prop_lut5_I2_O)        0.102     3.605 r  Sum_OBUF[13]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     3.924    C_12
+                         LUT5 (Prop_lut5_I2_O)        0.102     4.026 r  Sum_OBUF[15]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     4.345    C_14
+                         LUT5 (Prop_lut5_I3_O)        0.102     4.447 r  Sum_OBUF[15]_inst_i_1/O
+                         net (fo=1, unplaced)         0.571     5.018    Sum_OBUF[15]
+                         OBUF (Prop_obuf_I_O)         2.258     7.276 r  Sum_OBUF[15]_inst/O
+                         net (fo=0)                   0.000     7.276    Sum[15]
+                                                                      r  Sum[15]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Cin
+                            (input port)
+  Destination:            Sum[15]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.276ns  (logic 3.901ns (53.609%)  route 3.375ns (46.391%))
+  Logic Levels:           10  (IBUF=1 LUT5=8 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 f  Cin
+                         net (fo=0)                   0.000     0.000    Cin
+                         IBUF (Prop_ibuf_I_O)         0.821     0.821 f  Cin_IBUF_inst/O
+                         net (fo=3, unplaced)         0.571     1.392    Cin_IBUF
+                         LUT5 (Prop_lut5_I2_O)        0.113     1.505 f  Sum_OBUF[3]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     1.824    C_2
+                         LUT5 (Prop_lut5_I2_O)        0.102     1.926 f  Sum_OBUF[5]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     2.245    C_4
+                         LUT5 (Prop_lut5_I2_O)        0.102     2.347 f  Sum_OBUF[7]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     2.666    C_6
+                         LUT5 (Prop_lut5_I2_O)        0.102     2.768 f  Sum_OBUF[9]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     3.087    C_8
+                         LUT5 (Prop_lut5_I2_O)        0.097     3.184 f  Sum_OBUF[11]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     3.503    C_10
+                         LUT5 (Prop_lut5_I2_O)        0.102     3.605 f  Sum_OBUF[13]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     3.924    C_12
+                         LUT5 (Prop_lut5_I2_O)        0.102     4.026 f  Sum_OBUF[15]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     4.345    C_14
+                         LUT5 (Prop_lut5_I3_O)        0.102     4.447 r  Sum_OBUF[15]_inst_i_1/O
+                         net (fo=1, unplaced)         0.571     5.018    Sum_OBUF[15]
+                         OBUF (Prop_obuf_I_O)         2.258     7.276 r  Sum_OBUF[15]_inst/O
+                         net (fo=0)                   0.000     7.276    Sum[15]
+                                                                      r  Sum[15]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Cin
+                            (input port)
+  Destination:            Sum[15]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.276ns  (logic 3.901ns (53.609%)  route 3.375ns (46.391%))
+  Logic Levels:           10  (IBUF=1 LUT5=8 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  Cin
+                         net (fo=0)                   0.000     0.000    Cin
+                         IBUF (Prop_ibuf_I_O)         0.821     0.821 r  Cin_IBUF_inst/O
+                         net (fo=3, unplaced)         0.571     1.392    Cin_IBUF
+                         LUT5 (Prop_lut5_I2_O)        0.113     1.505 r  Sum_OBUF[3]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     1.824    C_2
+                         LUT5 (Prop_lut5_I2_O)        0.102     1.926 r  Sum_OBUF[5]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     2.245    C_4
+                         LUT5 (Prop_lut5_I2_O)        0.102     2.347 r  Sum_OBUF[7]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     2.666    C_6
+                         LUT5 (Prop_lut5_I2_O)        0.102     2.768 r  Sum_OBUF[9]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     3.087    C_8
+                         LUT5 (Prop_lut5_I2_O)        0.097     3.184 r  Sum_OBUF[11]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     3.503    C_10
+                         LUT5 (Prop_lut5_I2_O)        0.102     3.605 r  Sum_OBUF[13]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     3.924    C_12
+                         LUT5 (Prop_lut5_I2_O)        0.102     4.026 r  Sum_OBUF[15]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     4.345    C_14
+                         LUT5 (Prop_lut5_I3_O)        0.102     4.447 f  Sum_OBUF[15]_inst_i_1/O
+                         net (fo=1, unplaced)         0.571     5.018    Sum_OBUF[15]
+                         OBUF (Prop_obuf_I_O)         2.258     7.276 f  Sum_OBUF[15]_inst/O
+                         net (fo=0)                   0.000     7.276    Sum[15]
+                                                                      f  Sum[15]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Cin
+                            (input port)
+  Destination:            Sum[15]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.276ns  (logic 3.901ns (53.609%)  route 3.375ns (46.391%))
+  Logic Levels:           10  (IBUF=1 LUT5=8 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 f  Cin
+                         net (fo=0)                   0.000     0.000    Cin
+                         IBUF (Prop_ibuf_I_O)         0.821     0.821 f  Cin_IBUF_inst/O
+                         net (fo=3, unplaced)         0.571     1.392    Cin_IBUF
+                         LUT5 (Prop_lut5_I2_O)        0.113     1.505 f  Sum_OBUF[3]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     1.824    C_2
+                         LUT5 (Prop_lut5_I2_O)        0.102     1.926 f  Sum_OBUF[5]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     2.245    C_4
+                         LUT5 (Prop_lut5_I2_O)        0.102     2.347 f  Sum_OBUF[7]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     2.666    C_6
+                         LUT5 (Prop_lut5_I2_O)        0.102     2.768 f  Sum_OBUF[9]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     3.087    C_8
+                         LUT5 (Prop_lut5_I2_O)        0.097     3.184 f  Sum_OBUF[11]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     3.503    C_10
+                         LUT5 (Prop_lut5_I2_O)        0.102     3.605 f  Sum_OBUF[13]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     3.924    C_12
+                         LUT5 (Prop_lut5_I2_O)        0.102     4.026 f  Sum_OBUF[15]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     4.345    C_14
+                         LUT5 (Prop_lut5_I3_O)        0.102     4.447 f  Sum_OBUF[15]_inst_i_1/O
+                         net (fo=1, unplaced)         0.571     5.018    Sum_OBUF[15]
+                         OBUF (Prop_obuf_I_O)         2.258     7.276 f  Sum_OBUF[15]_inst/O
+                         net (fo=0)                   0.000     7.276    Sum[15]
+                                                                      f  Sum[15]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 B[0]
+                            (input port)
+  Destination:            Sum[15]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.275ns  (logic 3.900ns (53.603%)  route 3.375ns (46.397%))
+  Logic Levels:           10  (IBUF=1 LUT5=8 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  B[0]
+                         net (fo=0)                   0.000     0.000    B[0]
+                         IBUF (Prop_ibuf_I_O)         0.821     0.821 r  B_IBUF[0]_inst/O
+                         net (fo=3, unplaced)         0.571     1.392    B_IBUF[0]
+                         LUT5 (Prop_lut5_I3_O)        0.112     1.504 r  Sum_OBUF[3]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     1.823    C_2
+                         LUT5 (Prop_lut5_I2_O)        0.102     1.925 r  Sum_OBUF[5]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     2.244    C_4
+                         LUT5 (Prop_lut5_I2_O)        0.102     2.346 r  Sum_OBUF[7]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     2.665    C_6
+                         LUT5 (Prop_lut5_I2_O)        0.102     2.767 r  Sum_OBUF[9]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     3.086    C_8
+                         LUT5 (Prop_lut5_I2_O)        0.097     3.183 r  Sum_OBUF[11]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     3.502    C_10
+                         LUT5 (Prop_lut5_I2_O)        0.102     3.604 r  Sum_OBUF[13]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     3.923    C_12
+                         LUT5 (Prop_lut5_I2_O)        0.102     4.025 r  Sum_OBUF[15]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     4.344    C_14
+                         LUT5 (Prop_lut5_I3_O)        0.102     4.446 r  Sum_OBUF[15]_inst_i_1/O
+                         net (fo=1, unplaced)         0.571     5.017    Sum_OBUF[15]
+                         OBUF (Prop_obuf_I_O)         2.258     7.275 r  Sum_OBUF[15]_inst/O
+                         net (fo=0)                   0.000     7.275    Sum[15]
+                                                                      r  Sum[15]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 B[0]
+                            (input port)
+  Destination:            Sum[15]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.275ns  (logic 3.900ns (53.603%)  route 3.375ns (46.397%))
+  Logic Levels:           10  (IBUF=1 LUT5=8 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 f  B[0]
+                         net (fo=0)                   0.000     0.000    B[0]
+                         IBUF (Prop_ibuf_I_O)         0.821     0.821 f  B_IBUF[0]_inst/O
+                         net (fo=3, unplaced)         0.571     1.392    B_IBUF[0]
+                         LUT5 (Prop_lut5_I3_O)        0.112     1.504 f  Sum_OBUF[3]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     1.823    C_2
+                         LUT5 (Prop_lut5_I2_O)        0.102     1.925 f  Sum_OBUF[5]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     2.244    C_4
+                         LUT5 (Prop_lut5_I2_O)        0.102     2.346 f  Sum_OBUF[7]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     2.665    C_6
+                         LUT5 (Prop_lut5_I2_O)        0.102     2.767 f  Sum_OBUF[9]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     3.086    C_8
+                         LUT5 (Prop_lut5_I2_O)        0.097     3.183 f  Sum_OBUF[11]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     3.502    C_10
+                         LUT5 (Prop_lut5_I2_O)        0.102     3.604 f  Sum_OBUF[13]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     3.923    C_12
+                         LUT5 (Prop_lut5_I2_O)        0.102     4.025 f  Sum_OBUF[15]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     4.344    C_14
+                         LUT5 (Prop_lut5_I3_O)        0.102     4.446 r  Sum_OBUF[15]_inst_i_1/O
+                         net (fo=1, unplaced)         0.571     5.017    Sum_OBUF[15]
+                         OBUF (Prop_obuf_I_O)         2.258     7.275 r  Sum_OBUF[15]_inst/O
+                         net (fo=0)                   0.000     7.275    Sum[15]
+                                                                      r  Sum[15]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 B[0]
+                            (input port)
+  Destination:            Sum[15]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.275ns  (logic 3.900ns (53.603%)  route 3.375ns (46.397%))
+  Logic Levels:           10  (IBUF=1 LUT5=8 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  B[0]
+                         net (fo=0)                   0.000     0.000    B[0]
+                         IBUF (Prop_ibuf_I_O)         0.821     0.821 r  B_IBUF[0]_inst/O
+                         net (fo=3, unplaced)         0.571     1.392    B_IBUF[0]
+                         LUT5 (Prop_lut5_I3_O)        0.112     1.504 r  Sum_OBUF[3]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     1.823    C_2
+                         LUT5 (Prop_lut5_I2_O)        0.102     1.925 r  Sum_OBUF[5]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     2.244    C_4
+                         LUT5 (Prop_lut5_I2_O)        0.102     2.346 r  Sum_OBUF[7]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     2.665    C_6
+                         LUT5 (Prop_lut5_I2_O)        0.102     2.767 r  Sum_OBUF[9]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     3.086    C_8
+                         LUT5 (Prop_lut5_I2_O)        0.097     3.183 r  Sum_OBUF[11]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     3.502    C_10
+                         LUT5 (Prop_lut5_I2_O)        0.102     3.604 r  Sum_OBUF[13]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     3.923    C_12
+                         LUT5 (Prop_lut5_I2_O)        0.102     4.025 r  Sum_OBUF[15]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     4.344    C_14
+                         LUT5 (Prop_lut5_I3_O)        0.102     4.446 f  Sum_OBUF[15]_inst_i_1/O
+                         net (fo=1, unplaced)         0.571     5.017    Sum_OBUF[15]
+                         OBUF (Prop_obuf_I_O)         2.258     7.275 f  Sum_OBUF[15]_inst/O
+                         net (fo=0)                   0.000     7.275    Sum[15]
+                                                                      f  Sum[15]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 B[0]
+                            (input port)
+  Destination:            Sum[15]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.275ns  (logic 3.900ns (53.603%)  route 3.375ns (46.397%))
+  Logic Levels:           10  (IBUF=1 LUT5=8 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 f  B[0]
+                         net (fo=0)                   0.000     0.000    B[0]
+                         IBUF (Prop_ibuf_I_O)         0.821     0.821 f  B_IBUF[0]_inst/O
+                         net (fo=3, unplaced)         0.571     1.392    B_IBUF[0]
+                         LUT5 (Prop_lut5_I3_O)        0.112     1.504 f  Sum_OBUF[3]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     1.823    C_2
+                         LUT5 (Prop_lut5_I2_O)        0.102     1.925 f  Sum_OBUF[5]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     2.244    C_4
+                         LUT5 (Prop_lut5_I2_O)        0.102     2.346 f  Sum_OBUF[7]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     2.665    C_6
+                         LUT5 (Prop_lut5_I2_O)        0.102     2.767 f  Sum_OBUF[9]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     3.086    C_8
+                         LUT5 (Prop_lut5_I2_O)        0.097     3.183 f  Sum_OBUF[11]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     3.502    C_10
+                         LUT5 (Prop_lut5_I2_O)        0.102     3.604 f  Sum_OBUF[13]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     3.923    C_12
+                         LUT5 (Prop_lut5_I2_O)        0.102     4.025 f  Sum_OBUF[15]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     4.344    C_14
+                         LUT5 (Prop_lut5_I3_O)        0.102     4.446 f  Sum_OBUF[15]_inst_i_1/O
+                         net (fo=1, unplaced)         0.571     5.017    Sum_OBUF[15]
+                         OBUF (Prop_obuf_I_O)         2.258     7.275 f  Sum_OBUF[15]_inst/O
+                         net (fo=0)                   0.000     7.275    Sum[15]
+                                                                      f  Sum[15]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Cin
+                            (input port)
+  Destination:            Cout
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.271ns  (logic 3.896ns (53.577%)  route 3.375ns (46.423%))
+  Logic Levels:           10  (IBUF=1 LUT5=8 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  Cin
+                         net (fo=0)                   0.000     0.000    Cin
+                         IBUF (Prop_ibuf_I_O)         0.821     0.821 r  Cin_IBUF_inst/O
+                         net (fo=3, unplaced)         0.571     1.392    Cin_IBUF
+                         LUT5 (Prop_lut5_I2_O)        0.113     1.505 r  Sum_OBUF[3]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     1.824    C_2
+                         LUT5 (Prop_lut5_I2_O)        0.102     1.926 r  Sum_OBUF[5]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     2.245    C_4
+                         LUT5 (Prop_lut5_I2_O)        0.102     2.347 r  Sum_OBUF[7]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     2.666    C_6
+                         LUT5 (Prop_lut5_I2_O)        0.102     2.768 r  Sum_OBUF[9]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     3.087    C_8
+                         LUT5 (Prop_lut5_I2_O)        0.097     3.184 r  Sum_OBUF[11]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     3.503    C_10
+                         LUT5 (Prop_lut5_I2_O)        0.102     3.605 r  Sum_OBUF[13]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     3.924    C_12
+                         LUT5 (Prop_lut5_I2_O)        0.102     4.026 r  Sum_OBUF[15]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     4.345    C_14
+                         LUT5 (Prop_lut5_I2_O)        0.097     4.442 r  Cout_OBUF_inst_i_1/O
+                         net (fo=1, unplaced)         0.571     5.013    Cout_OBUF
+                         OBUF (Prop_obuf_I_O)         2.258     7.271 r  Cout_OBUF_inst/O
+                         net (fo=0)                   0.000     7.271    Cout
+                                                                      r  Cout
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Cin
+                            (input port)
+  Destination:            Cout
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.271ns  (logic 3.896ns (53.577%)  route 3.375ns (46.423%))
+  Logic Levels:           10  (IBUF=1 LUT5=8 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 f  Cin
+                         net (fo=0)                   0.000     0.000    Cin
+                         IBUF (Prop_ibuf_I_O)         0.821     0.821 f  Cin_IBUF_inst/O
+                         net (fo=3, unplaced)         0.571     1.392    Cin_IBUF
+                         LUT5 (Prop_lut5_I2_O)        0.113     1.505 f  Sum_OBUF[3]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     1.824    C_2
+                         LUT5 (Prop_lut5_I2_O)        0.102     1.926 f  Sum_OBUF[5]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     2.245    C_4
+                         LUT5 (Prop_lut5_I2_O)        0.102     2.347 f  Sum_OBUF[7]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     2.666    C_6
+                         LUT5 (Prop_lut5_I2_O)        0.102     2.768 f  Sum_OBUF[9]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     3.087    C_8
+                         LUT5 (Prop_lut5_I2_O)        0.097     3.184 f  Sum_OBUF[11]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     3.503    C_10
+                         LUT5 (Prop_lut5_I2_O)        0.102     3.605 f  Sum_OBUF[13]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     3.924    C_12
+                         LUT5 (Prop_lut5_I2_O)        0.102     4.026 f  Sum_OBUF[15]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     4.345    C_14
+                         LUT5 (Prop_lut5_I2_O)        0.097     4.442 f  Cout_OBUF_inst_i_1/O
+                         net (fo=1, unplaced)         0.571     5.013    Cout_OBUF
+                         OBUF (Prop_obuf_I_O)         2.258     7.271 f  Cout_OBUF_inst/O
+                         net (fo=0)                   0.000     7.271    Cout
+                                                                      f  Cout
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+report_utilization -hierarchical_min_primitive_count 50 -name utilization_1
+set_load 5 [all_outputs]
+report_power -name {power_1}
+Command: report_power -name power_1
+WARNING: [Power 33-232] No user defined clocks were found in the design! Power estimation will be inaccurate until this is corrected.
+Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+0 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power
+Command: report_power
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date             : Mon Sep 28 12:41:08 2026
+| Host             : TARUN-PC running 64-bit major release  (build 9200)
+| Command          : report_power
+| Design           : ripple_carry_adder_16
+| Device           : xc7z020clg400-3
+| Design State     : synthesized
+| Grade            : extended
+| Process          : typical
+| Characterization : Production
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+----------------------------------+
+| Total On-Chip Power (W)  | 16.501 (Junction temp exceeded!) |
+| Design Power Budget (W)  | Unspecified*                     |
+| Power Budget Margin (W)  | NA                               |
+| Dynamic (W)              | 15.461                           |
+| Device Static (W)        | 1.039                            |
+| Effective TJA (C/W)      | 11.5                             |
+| Max Ambient (C)          | 0.0                              |
+| Junction Temperature (C) | 125.0                            |
+| Confidence Level         | Low                              |
+| Setting File             | ---                              |
+| Simulation Activity File | ---                              |
+| Design Nets Matched      | NA                               |
++--------------------------+----------------------------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++----------------+-----------+----------+-----------+-----------------+
+| On-Chip        | Power (W) | Used     | Available | Utilization (%) |
++----------------+-----------+----------+-----------+-----------------+
+| Slice Logic    |     0.101 |       24 |       --- |             --- |
+|   LUT as Logic |     0.101 |       16 |     53200 |            0.03 |
+| Signals        |     0.602 |       57 |       --- |             --- |
+| I/O            |    14.759 |       50 |       125 |           40.00 |
+| Static Power   |     1.039 |          |           |                 |
+| Total          |    16.501 |          |           |                 |
++----------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
++-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Vccint    |       1.000 |     1.134 |       0.836 |      0.299 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.934 |       0.834 |      0.100 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco18    |       1.800 |     7.293 |       7.292 |      0.001 |       NA    | Unspecified | NA         |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccbram   |       1.000 |     0.026 |       0.000 |      0.026 |       NA    | Unspecified | NA         |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccpint   |       1.000 |     0.473 |       0.000 |      0.473 |       NA    | Unspecified | NA         |
+| Vccpaux   |       1.800 |     0.010 |       0.000 |      0.010 |       NA    | Unspecified | NA         |
+| Vccpll    |       1.800 |     0.003 |       0.000 |      0.003 |       NA    | Unspecified | NA         |
+| Vcco_ddr  |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco_mio0 |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco_mio1 |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |       NA    | Unspecified | NA         |
++-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                     |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | Low        | Design is synthesized                                  | Accuracy of the tool is not optimal until design is fully placed and routed                                |
+| Clock nodes activity        | High       | User specified more than 95% of clocks                 |                                                                                                            |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view   |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                           |                                                                                                            |
+|                             |            |                                                        |                                                                                                            |
+| Overall confidence level    | Low        |                                                        |                                                                                                            |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+------------------------+
+| Ambient Temp (C)      | 25.0                   |
+| ThetaJA (C/W)         | 11.5                   |
+| Airflow (LFM)         | 250                    |
+| Heat Sink             | none                   |
+| ThetaSA (C/W)         | 0.0                    |
+| Board Selection       | medium (10"x10")       |
+| # of Board Layers     | 8to11 (8 to 11 Layers) |
+| Board Temperature (C) | 25.0                   |
++-----------------------+------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-------+--------+-----------------+
+| Clock | Domain | Constraint (ns) |
++-------+--------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++-----------------------+-----------+
+| Name                  | Power (W) |
++-----------------------+-----------+
+| ripple_carry_adder_16 |    15.461 |
++-----------------------+-----------+
+
+
+0 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+create_clock -name vclk -period 10.000
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'vclk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command.
+vclk
+set_input_delay  0.000 -clock vclk \
+    [get_ports {A[*] B[*] Cin}]
+set_output_delay 0.000 -clock vclk \
+    [get_ports {Sum[*] Cout}]
+report_timing
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -3, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Mon Sep 28 12:45:59 2026
+| Host         : TARUN-PC running 64-bit major release  (build 9200)
+| Command      : report_timing
+| Design       : ripple_carry_adder_16
+| Device       : 7z020-clg400
+| Speed File   : -3  PRODUCTION 1.12 2019-11-22
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             2.699ns  (required time - arrival time)
+  Source:                 Cin
+                            (input port clocked by vclk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Sum[15]
+                            (output port clocked by vclk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             vclk
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (vclk rise@10.000ns - vclk rise@0.000ns)
+  Data Path Delay:        7.276ns  (logic 3.901ns (53.609%)  route 3.375ns (46.391%))
+  Logic Levels:           10  (IBUF=1 LUT5=8 OBUF=1)
+  Input Delay:            0.000ns
+  Output Delay:           0.000ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock vclk rise edge)       0.000     0.000 r  <hidden>
+                         ideal clock network latency
+                                                      0.000     0.000    <hidden>
+                         input delay                  0.000     0.000    <hidden>
+                                                      0.000     0.000 r  Cin
+                         net (fo=0)                   0.000     0.000    Cin
+                         IBUF (Prop_ibuf_I_O)         0.821     0.821 r  Cin_IBUF_inst/O
+                         net (fo=3, unplaced)         0.571     1.392    Cin_IBUF
+                         LUT5 (Prop_lut5_I2_O)        0.113     1.505 r  Sum_OBUF[3]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     1.824    C_2
+                         LUT5 (Prop_lut5_I2_O)        0.102     1.926 r  Sum_OBUF[5]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     2.245    C_4
+                         LUT5 (Prop_lut5_I2_O)        0.102     2.347 r  Sum_OBUF[7]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     2.666    C_6
+                         LUT5 (Prop_lut5_I2_O)        0.102     2.768 r  Sum_OBUF[9]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     3.087    C_8
+                         LUT5 (Prop_lut5_I2_O)        0.097     3.184 r  Sum_OBUF[11]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     3.503    C_10
+                         LUT5 (Prop_lut5_I2_O)        0.102     3.605 r  Sum_OBUF[13]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     3.924    C_12
+                         LUT5 (Prop_lut5_I2_O)        0.102     4.026 r  Sum_OBUF[15]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     4.345    C_14
+                         LUT5 (Prop_lut5_I3_O)        0.102     4.447 r  Sum_OBUF[15]_inst_i_1/O
+                         net (fo=1, unplaced)         0.571     5.018    Sum_OBUF[15]
+                         OBUF (Prop_obuf_I_O)         2.258     7.276 r  Sum_OBUF[15]_inst/O
+                         net (fo=0)                   0.000     7.276    Sum[15]
+                                                                      r  Sum[15]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock vclk rise edge)      10.000    10.000 r  <hidden>
+                         ideal clock network latency
+                                                      0.000    10.000    <hidden>
+                         clock pessimism              0.000    10.000    <hidden>
+                         clock uncertainty           -0.025     9.975    <hidden>
+                         output delay                -0.000     9.975    <hidden>
+  -------------------------------------------------------------------
+                         required time                          9.975    <hidden>
+                         arrival time                          -7.276    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  2.699    <hidden>
+
+
+
+
+close_design
+create_clock -name vclk -period 10.000
+ERROR: [Common 17-53] User Exception: No open design. Please open an elaborated, synthesized or implemented design before executing this command.
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg400-3
+INFO: [Project 1-5699] Read binary netlist with skipMacroContent - 1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3642.199 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2026.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3642.199 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+create_clock -name vclk -period 10.000
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'vclk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command.
+vclk
+set_input_delay  0.000 -clock vclk \
+    [get_ports {A[*] B[*] Cin}]
+set_output_delay 0.000 -clock vclk \
+    [get_ports {Sum[*] Cout}]
+file mkdir {E:/CO assignment/RCA_16/RCA_16.srcs/constrs_1/new}
+close [ open {E:/CO assignment/RCA_16/RCA_16.srcs/constrs_1/new/constraints.xdc} w ]
+add_files -fileset constrs_1 {{E:/CO assignment/RCA_16/RCA_16.srcs/constrs_1/new/constraints.xdc}}
+set_property target_constrs_file {E:/CO assignment/RCA_16/RCA_16.srcs/constrs_1/new/constraints.xdc} [current_fileset -constrset]
+save_constraints -force
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+[Mon Sep 28 12:49:41 2026] Launched synth_1...
+Run output will be captured here: E:/CO assignment/RCA_16/RCA_16.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg400-3
+INFO: [Project 1-5699] Read binary netlist with skipMacroContent - 1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4389.238 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2026.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/CO assignment/RCA_16/RCA_16.srcs/constrs_1/new/constraints.xdc]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'vclk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [E:/CO assignment/RCA_16/RCA_16.srcs/constrs_1/new/constraints.xdc:1]
+Finished Parsing XDC File [E:/CO assignment/RCA_16/RCA_16.srcs/constrs_1/new/constraints.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4389.238 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+report_power -name {power_1}
+Command: report_power -name power_1
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'vclk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [E:/CO assignment/RCA_16/RCA_16.srcs/constrs_1/new/constraints.xdc:1]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+2 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7z020clg400-3
+Top: ripple_carry_adder_16
+INFO: [Designutils 20-5008] Incremental synthesis strategy default
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 4389.238 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ripple_carry_adder_16' [E:/CO assignment/RCA_16/RCA_16.srcs/sources_1/new/ripple_carry_adder_16.v:23]
+INFO: [Synth 8-6157] synthesizing module 'full_adder' [E:/CO assignment/RCA_16/RCA_16.srcs/sources_1/new/full_adder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'full_adder' (0#1) [E:/CO assignment/RCA_16/RCA_16.srcs/sources_1/new/full_adder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ripple_carry_adder_16' (0#1) [E:/CO assignment/RCA_16/RCA_16.srcs/sources_1/new/ripple_carry_adder_16.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 4389.238 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 4389.238 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 4389.238 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 4389.238 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/CO assignment/RCA_16/RCA_16.srcs/constrs_1/new/constraints.xdc]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'vclk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [E:/CO assignment/RCA_16/RCA_16.srcs/constrs_1/new/constraints.xdc:1]
+Finished Parsing XDC File [E:/CO assignment/RCA_16/RCA_16.srcs/constrs_1/new/constraints.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4389.238 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 4389.238 ; gain = 0.000
+9 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 4389.238 ; gain = 0.000
+current_design synth_1
+write_verilog -force rca_netlist.v
+ERROR: [Common 17-1293] The path 'E:/CO assignment/RCA_16' already exists, is a directory, but is not writable.
+close_design
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg400-3
+INFO: [Project 1-5699] Read binary netlist with skipMacroContent - 1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4389.238 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2026.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/CO assignment/RCA_16/RCA_16.srcs/constrs_1/new/constraints.xdc]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'vclk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [E:/CO assignment/RCA_16/RCA_16.srcs/constrs_1/new/constraints.xdc:1]
+Finished Parsing XDC File [E:/CO assignment/RCA_16/RCA_16.srcs/constrs_1/new/constraints.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4389.238 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+write_verilog -force rca_netlist.v
+ERROR: [Common 17-1293] The path 'E:/CO assignment/RCA_16' already exists, is a directory, but is not writable.
+write_verilog -force C:/Users/tarun/Downloads/rca_netlist.v
+ERROR: [Common 17-1293] The path 'C:/Users/tarun/Downloads' already exists, is a directory, but is not writable.
+write_verilog -force C:/Users/tarun/Downloads/netlist/rca_netlist.v
+C:/Users/tarun/Downloads/netlist/rca_netlist.v
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'B[0]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'B[1]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'B[2]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'B[3]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'B[4]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'B[5]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'B[6]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'B[7]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'B[8]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'B[9]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'B[10]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'B[11]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'B[12]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'B[13]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'B[14]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'B[15]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'B[0]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'B[1]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'B[2]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'B[3]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'B[4]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'B[5]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'B[6]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'B[7]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'B[8]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'B[9]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'B[10]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'B[11]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'B[12]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'B[13]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'B[14]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'B[15]'; it is not accessible from the fabric routing.
+write_schematic -format pdf -orientation portrait {F:/Sem7/Computer Organisation/assignment/schematic.pdf}
+F:/Sem7/Computer Organisation/assignment/schematic.pdf
+launch_simulation
+Command: launch_simulation  -mode behavioral
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Mon Sep 28 16:09:38 2026
+
+INFO: [Vivado 12-12493] Simulation top is 'tb_ripple_carry_adder_16'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/CO assignment/RCA_16/RCA_16.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/AMDDesignTools/2026.1/Vivado/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_ripple_carry_adder_16' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/CO assignment/RCA_16/RCA_16.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_ripple_carry_adder_16_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CO assignment/RCA_16/RCA_16.srcs/sources_1/new/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CO assignment/RCA_16/RCA_16.srcs/sources_1/new/ripple_carry_adder_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ripple_carry_adder_16
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CO assignment/RCA_16/RCA_16.srcs/sim_1/new/tb_ripple_carry_adder_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_ripple_carry_adder_16
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CO assignment/RCA_16/RCA_16.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/CO assignment/RCA_16/RCA_16.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_ripple_carry_adder_16_behav xil_defaultlib.tb_ripple_carry_adder_16 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_ripple_carry_adder_16_behav xil_defaultlib.tb_ripple_carry_adder_16 xil_defaultlib.glbl -log elaborate.log 
+INFO: [XSIM 43-3493] Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.full_adder
+Compiling module xil_defaultlib.ripple_carry_adder_16
+Compiling module xil_defaultlib.tb_ripple_carry_adder_16
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_ripple_carry_adder_16_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/CO assignment/RCA_16/RCA_16.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_ripple_carry_adder_16_behav -key {Behavioral:sim_1:Functional:tb_ripple_carry_adder_16} -tclbatch {tb_ripple_carry_adder_16.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_ripple_carry_adder_16.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 70 ns : File "E:/CO assignment/RCA_16/RCA_16.srcs/sim_1/new/tb_ripple_carry_adder_16.v" Line 64
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_ripple_carry_adder_16_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 5171.230 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -mode post-synthesis -type functional
+Command: launch_simulation  -mode post-synthesis -type functional
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Mon Sep 28 16:12:08 2026
+
+INFO: [Vivado 12-12493] Simulation top is 'tb_ripple_carry_adder_16'
+INFO: [Vivado 12-5682] Launching post-synthesis functional simulation in 'E:/CO assignment/RCA_16/RCA_16.sim/sim_1/synth/func/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/AMDDesignTools/2026.1/Vivado/tps/boost_1_72_0'
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode funcsim -nolib -force -file "E:/CO assignment/RCA_16/RCA_16.sim/sim_1/synth/func/xsim/tb_ripple_carry_adder_16_func_synth.v"
+INFO: [SIM-utils-36] Netlist generated:E:/CO assignment/RCA_16/RCA_16.sim/sim_1/synth/func/xsim/tb_ripple_carry_adder_16_func_synth.v
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_ripple_carry_adder_16' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/CO assignment/RCA_16/RCA_16.sim/sim_1/synth/func/xsim'
+"xvlog --incr --relax -prj tb_ripple_carry_adder_16_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CO assignment/RCA_16/RCA_16.sim/sim_1/synth/func/xsim/tb_ripple_carry_adder_16_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ripple_carry_adder_16
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CO assignment/RCA_16/RCA_16.srcs/sim_1/new/tb_ripple_carry_adder_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_ripple_carry_adder_16
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/CO assignment/RCA_16/RCA_16.sim/sim_1/synth/func/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot tb_ripple_carry_adder_16_func_synth xil_defaultlib.tb_ripple_carry_adder_16 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot tb_ripple_carry_adder_16_func_synth xil_defaultlib.tb_ripple_carry_adder_16 xil_defaultlib.glbl -log elaborate.log 
+INFO: [XSIM 43-3493] Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module xil_defaultlib.ripple_carry_adder_16
+Compiling module xil_defaultlib.tb_ripple_carry_adder_16
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_ripple_carry_adder_16_func_synth
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/CO assignment/RCA_16/RCA_16.sim/sim_1/synth/func/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_ripple_carry_adder_16_func_synth -key {Post-Synthesis:sim_1:Functional:tb_ripple_carry_adder_16} -tclbatch {tb_ripple_carry_adder_16.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_ripple_carry_adder_16.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 70 ns : File "E:/CO assignment/RCA_16/RCA_16.srcs/sim_1/new/tb_ripple_carry_adder_16.v" Line 64
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_ripple_carry_adder_16_func_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'vclk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [E:/CO assignment/RCA_16/RCA_16.srcs/constrs_1/new/constraints.xdc:1]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -3, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -3, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Mon Sep 28 16:17:30 2026
+| Host         : TARUN-PC running 64-bit major release  (build 9200)
+| Command      : report_timing
+| Design       : ripple_carry_adder_16
+| Device       : 7z020-clg400
+| Speed File   : -3  PRODUCTION 1.12 2019-11-22
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             2.699ns  (required time - arrival time)
+  Source:                 Cin
+                            (input port clocked by vclk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Sum[15]
+                            (output port clocked by vclk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             vclk
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (vclk rise@10.000ns - vclk rise@0.000ns)
+  Data Path Delay:        7.276ns  (logic 3.901ns (53.609%)  route 3.375ns (46.391%))
+  Logic Levels:           10  (IBUF=1 LUT5=8 OBUF=1)
+  Input Delay:            0.000ns
+  Output Delay:           0.000ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock vclk rise edge)       0.000     0.000 r  <hidden>
+                         ideal clock network latency
+                                                      0.000     0.000    <hidden>
+                         input delay                  0.000     0.000    <hidden>
+                                                      0.000     0.000 r  Cin
+                         net (fo=0)                   0.000     0.000    Cin
+                         IBUF (Prop_ibuf_I_O)         0.821     0.821 r  Cin_IBUF_inst/O
+                         net (fo=3, unplaced)         0.571     1.392    Cin_IBUF
+                         LUT5 (Prop_lut5_I2_O)        0.113     1.505 r  Sum_OBUF[3]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     1.824    C_2
+                         LUT5 (Prop_lut5_I2_O)        0.102     1.926 r  Sum_OBUF[5]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     2.245    C_4
+                         LUT5 (Prop_lut5_I2_O)        0.102     2.347 r  Sum_OBUF[7]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     2.666    C_6
+                         LUT5 (Prop_lut5_I2_O)        0.102     2.768 r  Sum_OBUF[9]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     3.087    C_8
+                         LUT5 (Prop_lut5_I2_O)        0.097     3.184 r  Sum_OBUF[11]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     3.503    C_10
+                         LUT5 (Prop_lut5_I2_O)        0.102     3.605 r  Sum_OBUF[13]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     3.924    C_12
+                         LUT5 (Prop_lut5_I2_O)        0.102     4.026 r  Sum_OBUF[15]_inst_i_2/O
+                         net (fo=3, unplaced)         0.319     4.345    C_14
+                         LUT5 (Prop_lut5_I3_O)        0.102     4.447 r  Sum_OBUF[15]_inst_i_1/O
+                         net (fo=1, unplaced)         0.571     5.018    Sum_OBUF[15]
+                         OBUF (Prop_obuf_I_O)         2.258     7.276 r  Sum_OBUF[15]_inst/O
+                         net (fo=0)                   0.000     7.276    Sum[15]
+                                                                      r  Sum[15]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock vclk rise edge)      10.000    10.000 r  <hidden>
+                         ideal clock network latency
+                                                      0.000    10.000    <hidden>
+                         clock pessimism              0.000    10.000    <hidden>
+                         clock uncertainty           -0.025     9.975    <hidden>
+                         output delay                -0.000     9.975    <hidden>
+  -------------------------------------------------------------------
+                         required time                          9.975    <hidden>
+                         arrival time                          -7.276    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  2.699    <hidden>
+
+
+
+
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 29 12:14:39 2026...

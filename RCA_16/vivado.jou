@@ -1,0 +1,86 @@
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Mon Sep 28 12:09:03 2026
+# Process ID         : 39436
+# Current directory  : E:/CO assignment/RCA_16
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent2760 E:\CO assignment\RCA_16\RCA_16.xpr
+# Log file           : E:/CO assignment/RCA_16/vivado.log
+# Journal file       : E:/CO assignment/RCA_16\vivado.jou
+# Running On         : TARUN-PC
+# Platform           : Windows 11
+# Operating System   : 26300
+# Processor Detail   : AMD Ryzen 7 8845HS w/ Radeon 780M Graphics
+# CPU Frequency      : 3793 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 33615 MB
+# Swap memory        : 5100 MB
+# Total Virtual      : 38715 MB
+# Available Virtual  : 14521 MB
+#-----------------------------------------------------------
+start_gui
+open_project {E:/CO assignment/RCA_16/RCA_16.xpr}
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+close_design
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_design
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+launch_simulation -mode post-synthesis -type timing
+source tb_ripple_carry_adder_16.tcl
+close_sim
+report_timing
+report_timing -nworst 10
+report_utilization -hierarchical_min_primitive_count 50 -name utilization_1
+set_load 5 [all_outputs]
+report_power -name {power_1}
+report_power
+create_clock -name vclk -period 10.000
+set_input_delay  0.000 -clock vclk \
+    [get_ports {A[*] B[*] Cin}]
+set_output_delay 0.000 -clock vclk \
+    [get_ports {Sum[*] Cout}]
+report_timing
+close_design
+create_clock -name vclk -period 10.000
+open_run synth_1 -name synth_1
+create_clock -name vclk -period 10.000
+set_input_delay  0.000 -clock vclk \
+    [get_ports {A[*] B[*] Cin}]
+set_output_delay 0.000 -clock vclk \
+    [get_ports {Sum[*] Cout}]
+file mkdir {E:/CO assignment/RCA_16/RCA_16.srcs/constrs_1/new}
+close [ open {E:/CO assignment/RCA_16/RCA_16.srcs/constrs_1/new/constraints.xdc} w ]
+add_files -fileset constrs_1 {{E:/CO assignment/RCA_16/RCA_16.srcs/constrs_1/new/constraints.xdc}}
+set_property target_constrs_file {E:/CO assignment/RCA_16/RCA_16.srcs/constrs_1/new/constraints.xdc} [current_fileset -constrset]
+save_constraints -force
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_power -name {power_1}
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+current_design synth_1
+write_verilog -force rca_netlist.v
+close_design
+close_design
+open_run synth_1 -name synth_1
+write_verilog -force rca_netlist.v
+write_verilog -force C:/Users/tarun/Downloads/rca_netlist.v
+write_verilog -force C:/Users/tarun/Downloads/netlist/rca_netlist.v
+write_schematic -format pdf -orientation portrait {F:/Sem7/Computer Organisation/assignment/schematic.pdf}
+launch_simulation
+source tb_ripple_carry_adder_16.tcl
+close_sim
+launch_simulation -mode post-synthesis -type functional
+source tb_ripple_carry_adder_16.tcl
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+report_timing
+close_sim
