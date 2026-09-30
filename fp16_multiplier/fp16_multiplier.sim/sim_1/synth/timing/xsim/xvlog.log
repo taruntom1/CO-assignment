@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CO assignment/fp16_multiplier/fp16_multiplier.sim/sim_1/synth/timing/xsim/fp16_multiplier_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fp16_multiplier
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/CO assignment/fp16_multiplier/fp16_multiplier.srcs/sim_1/new/fp16_multiplier_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fp16_multiplier_tb

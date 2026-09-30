@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_sequential_shift_add_multiplier_behav/xsimk.exe -simmode gui -wdb tb_sequential_shift_add_multiplier_behav.wdb -simrunnum 0 -socket 11448
+Design successfully loaded
+Design Loading Memory Usage: 18988 KB (Peak: 18988 KB)
+Design Loading CPU Usage: 124 ms
+Simulation completed
+Simulation Memory Usage: 21868 KB (Peak: 21868 KB)
+Simulation CPU Usage: 405 ms

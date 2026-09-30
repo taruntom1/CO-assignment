@@ -1,0 +1,32 @@
+Time resolution is 1 ps
+PASS: A=3c00  B=3c00  PRODUCT=3c00
+PASS: A=3c00  B=4000  PRODUCT=4000
+PASS: A=4000  B=4400  PRODUCT=4800
+PASS: A=3e00  B=4000  PRODUCT=4200
+PASS: A=3e00  B=3d00  PRODUCT=3f80
+PASS: A=4100  B=4400  PRODUCT=4900
+PASS: A=be00  B=4000  PRODUCT=c200
+PASS: A=c000  B=c400  PRODUCT=4800
+PASS: A=4000  B=c400  PRODUCT=c800
+PASS: A=0000  B=3c00  PRODUCT=0000
+PASS: A=3c00  B=0000  PRODUCT=0000
+PASS: A=8000  B=3c00  PRODUCT=8000
+PASS: A=7bff  B=3c00  PRODUCT=7bff
+PASS: A=7800  B=4000  PRODUCT=7c00
+PASS: A=f800  B=4000  PRODUCT=fc00
+PASS: A=7c00  B=4000  PRODUCT=7c00
+PASS: A=fc00  B=4000  PRODUCT=fc00
+PASS: A=7c00  B=0000  PRODUCT=7e00
+PASS: A=7e00  B=3c00  PRODUCT=7e00
+PASS: A=0400  B=3800  PRODUCT=0000
+PASS: A=0001  B=3c00  PRODUCT=0000
+
+========================================
+16-bit Floating-Point Multiplier Test
+========================================
+Total Tests : 21
+Passed      : 21
+Failed      : 0
+RESULT      : ALL TESTS PASSED
+========================================
+$finish called at time : 22 ns : File "E:/CO assignment/fp16_multiplier/fp16_multiplier.srcs/sim_1/new/fp16_multiplier_tb.v" Line 179

@@ -1,0 +1,135 @@
+Time resolution is 1 ps
+==============================================
+32-bit Tree Multiplier Testbench
+==============================================
+PASS: A = 00000000, B = 00000000, Product = 0000000000000000
+PASS: A = 00000000, B = 00003039, Product = 0000000000000000
+PASS: A = 00003039, B = 00000000, Product = 0000000000000000
+PASS: A = 00000001, B = 00000001, Product = 0000000000000001
+PASS: A = 00000001, B = 00003039, Product = 0000000000003039
+PASS: A = 00003039, B = 00000001, Product = 0000000000003039
+PASS: A = ffffffff, B = 00000000, Product = 0000000000000000
+PASS: A = ffffffff, B = 00000001, Product = 00000000ffffffff
+PASS: A = ffffffff, B = ffffffff, Product = fffffffe00000001
+PASS: A = 80000000, B = 00000001, Product = 0000000080000000
+PASS: A = 80000000, B = 80000000, Product = 4000000000000000
+PASS: A = 7fffffff, B = 7fffffff, Product = 3fffffff00000001
+PASS: A = 00000002, B = 00000002, Product = 0000000000000004
+PASS: A = 00000004, B = 00000008, Product = 0000000000000020
+PASS: A = 00000010, B = 00000010, Product = 0000000000000100
+PASS: A = 00000100, B = 00000400, Product = 0000000000040000
+PASS: A = 00010000, B = 00010000, Product = 0000000100000000
+PASS: A = 0000007b, B = 000001c8, Product = 000000000000db18
+PASS: A = 000003e8, B = 000003e8, Product = 00000000000f4240
+PASS: A = 0000ffff, B = 0000ffff, Product = 00000000fffe0001
+PASS: A = 12345678, B = 0000ffff, Product = 000012344443a988
+PASS: A = aaaaaaaa, B = 55555555, Product = 38e38e3871c71c72
+PASS: A = deadbeef, B = 12345678, Product = 0fd5bdee5621ca08
+PASS: A = 12153524, B = c0895e81, Product = 0d999be15676ff24
+PASS: A = 8484d609, B = b1f05663, Product = 5c1c413cc0b5cb7b
+PASS: A = 06b97b0d, B = 46df998d, Product = 01dc97404d068b29
+PASS: A = b2c28465, B = 89375212, Product = 5fd0b9f35ec8a91a
+PASS: A = 00f3e301, B = 06d7cd0d, Product = 000684e90501540d
+PASS: A = 3b23f176, B = 1e8dcd3d, Product = 070ef881b1ea071e
+PASS: A = 76d457ed, B = 462df78c, Product = 209366461f9ec09c
+PASS: A = 7cfde9f9, B = e33724c6, Product = 6ef012f970c8fa96
+PASS: A = e2f784c5, B = d513d2aa, Product = bce9849c86e6c4d2
+PASS: A = 72aff7e5, B = bbd27277, Product = 5424d1b54d0a3573
+PASS: A = 8932d612, B = 47ecdb8f, Product = 268c09e7771efa0e
+PASS: A = 793069f2, B = e77696ce, Product = 6d92d34e16950cbc
+PASS: A = f4007ae8, B = e2ca4ec5, Product = d8293ff5b4e14488
+PASS: A = 2e58495c, B = de8e28bd, Product = 284a4bf67bac88ec
+PASS: A = 96ab582d, B = b2a72665, Product = 692583aeb00b77c1
+PASS: A = b1ef6263, B = 0573870a, Product = 03c9f95151b50cde
+PASS: A = c03b2280, B = 10642120, Product = 0c4ee22120d6d000
+PASS: A = 557845aa, B = cecccc9d, Product = 450b283691be3142
+PASS: A = cb203e96, B = 8983b813, Product = 6d1cc50c8d227522
+PASS: A = 86bc380d, B = a9a7d653, Product = 594a96962b5c0a37
+PASS: A = 359fdd6b, B = eaa62ad5, Product = 3126ef0639b8c807
+PASS: A = 81174a02, B = d7563eae, Product = 6c960c95ec6cc95c
+PASS: A = 0effe91d, B = e7c572cf, Product = 0d947d01a50d6873
+PASS: A = 11844923, B = 0509650a, Product = 005839fe2140aa5e
+PASS: A = e5730aca, B = 9e314c3c, Product = 8dc93001aad47f58
+PASS: A = 7968bdf2, B = 452e618a, Product = 20cf3a467deb1674
+PASS: A = 20c4b341, B = ec4b34d8, Product = 1e3ef5a40a6b72d8
+PASS: A = 3c20f378, B = c48a1289, Product = 2e29a8859d70bb38
+PASS: A = 75c50deb, B = 5b0265b6, Product = 29de26471d6b9c12
+PASS: A = 634bf9c6, B = 571513ae, Product = 21c6febfe86b7694
+PASS: A = de7502bc, B = 150fdd2a, Product = 124d62441792bed8
+PASS: A = 85d79a0b, B = b897be71, Product = 60824c74dcfc28db
+PASS: A = 42f24185, B = 27f2554f, Product = 0a72474c4b3d610b
+PASS: A = 9dcc603b, B = 1d06333a, Product = 11e3f94467db8e5e
+PASS: A = bf23327e, B = 0aaa4b15, Product = 07f68567715a0e56
+PASS: A = 78d99bf1, B = 6c9c4bd9, Product = 33459632e400ca49
+PASS: A = 31230762, B = 2635fb4c, Product = 07558f9501ed4718
+PASS: A = 4fa1559f, B = 47b9a18f, Product = 164f7c96eaded2d1
+PASS: A = 7c6da9f8, B = dbcd60b7, Product = 6ad5a33a55b98048
+PASS: A = cfc4569f, B = ae7d945c, Product = 8d9d5e268a460d24
+PASS: A = adcbc05b, B = 44de3789, Product = 2ec0fb7cc3477db3
+PASS: A = a4ae3249, B = e8233ed0, Product = 955489cb05b18950
+PASS: A = ebfec0d7, B = a8c7fc51, Product = 9b978a2e708fa807
+PASS: A = 4b212f96, B = 061d7f0c, Product = 01cb6f28e427a508
+PASS: A = e12ccec2, B = 6457edc8, Product = 5842d82472592190
+PASS: A = bb825a77, B = 1ef2ed3d, Product = 16ab3597d24db95b
+PASS: A = 090cdb12, B = bf05007e, Product = 06c0c4b729add2dc
+PASS: A = 36e5816d, B = 1cd9e739, Product = 062fd447f2482c45
+PASS: A = 0fd28f1f, B = e9ebf6d3, Product = 0e7539cdf888c08d
+PASS: A = 42d92f85, B = bc148878, Product = 311cdb801970ee58
+PASS: A = 2dda595b, B = 248b4b49, Product = 068ba79b5bda23f3
+PASS: A = 9ff2ae3f, B = 150caf2a, Product = 0d26d51c78e1a756
+PASS: A = 2c156358, B = c33f3886, Product = 219f2dab3b954010
+PASS: A = c71a0c8e, B = ce2ff29c, Product = a05c409285cfe288
+PASS: A = 7d3599fa, B = 937dbc26, Product = 4823469cb01a731c
+PASS: A = 39961773, B = d18bb4a3, Product = 2f22f645d17eca39
+PASS: A = 9799a82f, B = d9d292b3, Product = 80fdf27b6fe966dd
+PASS: A = afd8565f, B = 22290d44, Product = 1776ee3b2510c43c
+PASS: A = 7bf8fdf7, B = e59b36cb, Product = 6f30e5788b907cdd
+PASS: A = f3091ae6, B = 2d28db5a, Product = 2adf6364dd2636dc
+PASS: A = 14cfc129, B = f682e2ed, Product = 140a479029ae04f5
+PASS: A = ed536cda, B = b29fb665, Product = a598119720b2ee02
+PASS: A = da8ae2b5, B = efbe94df, Product = ccaa5bd1e7621fab
+PASS: A = 3cf11979, B = 2231ff44, Product = 0823ec4c4a934b24
+PASS: A = e8740cd0, B = 15090b2a, Product = 1319bb44a2e70a20
+PASS: A = 55f6adab, B = 076fcf0e, Product = 027f4a3c240fc45a
+PASS: A = 6e5daddc, B = cd5ebc9a, Product = 5889dbee32d02658
+PASS: A = fedf72fd, B = e1f102c3, Product = e0f2572b804790b7
+PASS: A = 2b0eed56, B = 2779e94e, Product = 06a3c773fc359634
+PASS: A = b3d97667, B = 8531340a, Product = 5d928bb25f428c06
+PASS: A = 5b6fb9b6, B = 9c0e8a38, Product = 37bd46a54a80bbd0
+PASS: A = 3cd18779, B = dc2bc4b8, Product = 344e7659dfa502f8
+PASS: A = 4a74bf94, B = 49c65d93, Product = 1574fc248b1ac5fc
+PASS: A = 823f2c04, B = acb7ca59, Product = 57dff3ae478d7564
+PASS: A = 6dcb69db, B = a6fcde4d, Product = 479e5a37a18ec0df
+PASS: A = 6cb0b7d9, B = b6a4266d, Product = 4d8b543a8f8c7d65
+PASS: A = bb45e276, B = 653b49ca, Product = 4a0df16e71ea571c
+PASS: A = 5b172db6, B = 4a937195, Product = 1a8929f01b2cf0ee
+PASS: A = a3071a46, B = 02749b04, Product = 019050244cbccb18
+PASS: A = 7bd261f7, B = 34980769, Product = 19704465e09fef4f
+PASS: A = da6ebab4, B = 44018d88, Product = 3a06bcc9925c53a0
+PASS: A = 147cd928, B = 9690042d, Product = 0c0cadcd23d6cc08
+PASS: A = e3c530c7, B = 975c9c2e, Product = 86abb597ffac07c2
+PASS: A = 8477e408, B = 0e41451c, Product = 076054ac239b18e0
+PASS: A = fea7a6fd, B = 149e0729, Product = 14824ba43290a985
+PASS: A = 8e37901c, B = 43356786, Product = 255635baf5dcb2a8
+PASS: A = ed3408da, B = 9eb7c63d, Product = 93106557a414b7f2
+PASS: A = 334ea766, B = b855c470, Product = 24f1b8cd8f7154a0
+PASS: A = b9f50473, B = 5d7199ba, Product = 43e0876f4970f68e
+PASS: A = 2f3ab35e, B = 7d4779fa, Product = 171cd95d832c97cc
+PASS: A = 6a8e05d5, B = 8d24f61a, Product = 3abf9b9e6efb45a2
+PASS: A = dcf000b9, B = 1b876137, Product = 17c2268a4c6540bf
+PASS: A = 4b273796, B = 603921c0, Product = 1c3f7a7c0bfa0680
+PASS: A = 13259f26, B = db461ab6, Product = 10666d6e754d0104
+PASS: A = 3e99837d, B = 6e5f0fdc, Product = 1afd35584c04526c
+PASS: A = 43615786, B = 3c03ff78, Product = 0fcbdde4fa6180d0
+PASS: A = 3f5a9b7e, B = ed8d80db, Product = 3ac9e6becaa804ca
+PASS: A = e7c3b6cf, B = 3ced2b79, Product = 372896642cd92cd7
+PASS: A = fd28e4fa, B = b0bcee61, Product = aec6f32ff8f72eba
+PASS: A = 0b940917, B = d0f578a1, Product = 097361840f5f7f77
+==============================================
+Test Summary
+Total Tests : 123
+Passed      : 123
+Failed      : 0
+==============================================
+ALL TESTS PASSED
+$finish called at time : 124 ns : File "E:/CO assignment/tree_multiplier_32/tree_multiplier_32.srcs/sim_1/new/tb_tree_multiplier_32bit.v" Line 149

@@ -1,0 +1,7 @@
+Running: xsim.dir/fp16_multiplier_tb_time_synth/xsimk.exe -simmode gui -wdb fp16_multiplier_tb_time_synth.wdb -simrunnum 0 -socket 3148
+Design successfully loaded
+Design Loading Memory Usage: 19684 KB (Peak: 19684 KB)
+Design Loading CPU Usage: 108 ms
+Simulation completed
+Simulation Memory Usage: 22532 KB (Peak: 22532 KB)
+Simulation CPU Usage: 233 ms
